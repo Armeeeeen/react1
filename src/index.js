@@ -4,14 +4,18 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+function Image() {
+  return (
+    <div>
+     <img src='https://c2.staticflickr.com/6/5307/5616330443_645de45fc6_b.jpg'/>
+    </div>
+  );
+}
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+function Hello() {
+  return React.createElement('div',{},'Hello')
+}
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+
+root.render(<Image/>) 
